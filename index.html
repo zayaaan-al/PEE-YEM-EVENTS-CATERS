@@ -1019,99 +1019,102 @@
         Booking request submitted successfully!
     </div>
 
-    <!-- Validation Script -->
-    <script>
+   <!-- Validation Script -->
+<script>
 
-        const form = document.getElementById("bookingForm");
-        const toast = document.getElementById("toast");
+    const form = document.getElementById("bookingForm");
+    const toast = document.getElementById("toast");
 
-        form.addEventListener("submit", function (e) {
+    // Inputs
+    const name = document.getElementById("name");
+    const phone = document.getElementById("phone");
+    const eventType = document.getElementById("eventType");
+    const eventDate = document.getElementById("eventDate");
+    const message = document.getElementById("message");
 
-            e.preventDefault();
-
-            // Inputs
-            const name = document.getElementById("name");
-            const phone = document.getElementById("phone");
-            const eventType = document.getElementById("eventType");
-            const eventDate = document.getElementById("eventDate");
-            const message = document.getElementById("message");
-
-            // Errors
-            const nameError = document.getElementById("nameError");
-            const phoneError = document.getElementById("phoneError");
-            const eventError = document.getElementById("eventError");
-            const dateError = document.getElementById("dateError");
-            const messageError = document.getElementById("messageError");
-
-            // Reset Errors
-            document.querySelectorAll(".text-red-500").forEach((el) => {
-                el.classList.add("hidden");
-            });
-
-            let isValid = true;
-
-            // Name Validation
-            if (name.value.trim() === "") {
-                nameError.classList.remove("hidden");
-                isValid = false;
-            }
-
-            // Phone Validation
-            const phonePattern = /^[0-9]{10}$/;
-
-            if (!phonePattern.test(phone.value.trim())) {
-                phoneError.classList.remove("hidden");
-                isValid = false;
-            }
-
-            // Event Type Validation
-            if (eventType.value === "") {
-                eventError.classList.remove("hidden");
-                isValid = false;
-            }
-
-            // Date Validation
-            if (eventDate.value === "") {
-                dateError.classList.remove("hidden");
-                isValid = false;
-            }
-           
+    // Errors
+    const nameError = document.getElementById("nameError");
+    const phoneError = document.getElementById("phoneError");
+    const eventError = document.getElementById("eventError");
+    const dateError = document.getElementById("dateError");
+    const messageError = document.getElementById("messageError");
 
     // Set minimum date to today
-    const eventDateInput = document.getElementById("eventDate");
-
     const today = new Date().toISOString().split("T")[0];
+    eventDate.setAttribute("min", today);
 
-    eventDateInput.setAttribute("min", today);
+    // Submit
+    form.addEventListener("submit", function (e) {
 
+        e.preventDefault();
 
-
-            // Message Validation
-            if (message.value.trim() === "") {
-                messageError.classList.remove("hidden");
-                isValid = false;
-            }
-
-            // Success
-            if (isValid) {
-
-                // Show Toast
-                toast.classList.remove("opacity-0", "pointer-events-none");
-                toast.classList.add("opacity-100");
-
-                // Hide Toast
-                setTimeout(() => {
-                    toast.classList.remove("opacity-100");
-                    toast.classList.add("opacity-0", "pointer-events-none");
-                }, 3000);
-
-                // Reset Form
-                form.reset();
-            }
-
+        // Reset Errors
+        document.querySelectorAll(".text-red-500").forEach((el) => {
+            el.classList.add("hidden");
         });
 
-    </script>
+        let isValid = true;
+
+        // Name Validation
+        if (name.value.trim() === "") {
+            nameError.classList.remove("hidden");
+            isValid = false;
+        }
+
+        // Phone Validation
+        const phonePattern = /^[0-9]{10}$/;
+
+        if (!phonePattern.test(phone.value.trim())) {
+            phoneError.classList.remove("hidden");
+            isValid = false;
+        }
+
+        // Event Type Validation
+        if (eventType.value === "") {
+            eventError.classList.remove("hidden");
+            isValid = false;
+        }
+
+        // Date Validation
+        if (eventDate.value === "") {
+
+            dateError.textContent = "Please select an event date";
+            dateError.classList.remove("hidden");
+            isValid = false;
+
+        } else if (eventDate.value < today) {
+
+            dateError.textContent = "Please select a future date";
+            dateError.classList.remove("hidden");
+            isValid = false;
+        }
+
+        // Message Validation
+        if (message.value.trim() === "") {
+            messageError.classList.remove("hidden");
+            isValid = false;
+        }
+
+        // Success
+        if (isValid) {
+
+            // Show Toast
+            toast.classList.remove("opacity-0", "pointer-events-none");
+            toast.classList.add("opacity-100");
+
+            // Hide Toast
+            setTimeout(() => {
+                toast.classList.remove("opacity-100");
+                toast.classList.add("opacity-0", "pointer-events-none");
+            }, 3000);
+
+            // Reset Form
+            form.reset();
+        }
+
+    });
+
+</script>
 
     <!-- Footer -->
     <footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-section-padding pb-12 px-gutter">
