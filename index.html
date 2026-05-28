@@ -1372,21 +1372,39 @@
         </div>
 
     </footer>
-    <!-- Floating Actions -->
-    <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-[60]">
-        <a class="w-14 h-14 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all group overflow-hidden animate-pulse-gold"
-            href="https://wa.me/919995034429" target="_blank">
-            <span class="material-symbols-outlined text-2xl">chat</span>
-            <span
-                class="absolute right-full mr-4 bg-black text-white px-3 py-1 text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity rounded">WhatsApp
-                Us</span>
-        </a>
-        <button
-            class="w-14 h-14 bg-surface border border-primary/30 text-primary rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all opacity-0 pointer-events-none"
-            id="scrollToTop">
-            <span class="material-symbols-outlined">north</span>
-        </button>
-    </div>
+   <!-- Floating Actions -->
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-[60]">
+
+    <!-- WhatsApp Button -->
+    <a
+        href="https://wa.me/919995034429"
+        target="_blank"
+        class="w-14 h-14 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all group overflow-hidden animate-pulse-gold">
+
+        <!-- WhatsApp Icon -->
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+
+        <!-- Tooltip -->
+        <span
+            class="absolute right-full mr-4 bg-black text-white px-3 py-1 text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity rounded">
+            WhatsApp Us
+        </span>
+    </a>
+
+    <!-- Scroll To Top -->
+    <button
+        id="scrollToTop"
+        class="w-14 h-14 bg-surface border border-primary/30 text-primary rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all opacity-0 pointer-events-none">
+
+        <span class="material-symbols-outlined">north</span>
+
+    </button>
+
+</div>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script>
         // 1. Hero Particle System (Canvas based)
         const canvas = document.getElementById('hero-particles');
