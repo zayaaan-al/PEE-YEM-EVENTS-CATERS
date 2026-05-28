@@ -206,143 +206,103 @@
     <div id="scroll-progress"></div>
     <div id="cursor-glow" style="left: 20px; top: 558px; width: 400px; height: 400px;"></div>
     <!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-transparent h-20 transition-all duration-500" id="main-nav">
+    <nav class="fixed top-0 w-full z-50 bg-transparent h-20 transition-all duration-500" id="main-nav">
 
-    <div class="flex justify-between items-center h-full px-gutter max-w-container-max mx-auto">
+        <div class="flex justify-between items-center h-full px-gutter max-w-container-max mx-auto">
 
-        <!-- Logo -->
-        <div class="font-display-lg text-lg sm:text-headline-sm text-primary tracking-tighter uppercase whitespace-nowrap">
-            PEE YEM EVENTS
-        </div>
+            <!-- Logo -->
+            <div
+                class="font-display-lg text-lg sm:text-headline-sm text-primary tracking-tighter uppercase whitespace-nowrap">
+                PEE YEM EVENTS
+            </div>
 
-        <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center gap-8 font-label-caps text-label-caps tracking-widest">
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 font-label-caps text-label-caps tracking-widest">
 
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#experience"
-            >
-                Experience
-            </a>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#experience">
+                    Experience
+                </a>
 
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#services"
-            >
-                Services
-            </a>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#services">
+                    Services
+                </a>
 
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#gallery"
-            >
-                Gallery
-            </a>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#gallery">
+                    Gallery
+                </a>
 
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#testimonials"
-            >
-                Testimonials
-            </a>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#testimonials">
+                    Testimonials
+                </a>
 
-        </div>
+            </div>
 
-        <!-- Desktop Button -->
-        <a
-            class="hidden md:inline-flex bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps tracking-widest font-bold hover:scale-105 active:scale-95 transition-all duration-300"
-            href="#booking"
-        >
-            Book Consultation
-        </a>
-
-        <!-- Mobile Menu Button -->
-        <button
-            id="menu-btn"
-            class="md:hidden text-primary flex items-center justify-center"
-            aria-label="Open Menu"
-        >
-
-            <svg xmlns="http://www.w3.org/2000/svg"
-                class="w-8 h-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                />
-
-            </svg>
-
-        </button>
-
-    </div>
-
-    <!-- Mobile Menu -->
-    <div
-        id="mobile-menu"
-        class="hidden md:hidden absolute top-20 left-0 w-full bg-surface-container-lowest border-t border-outline-variant/20 backdrop-blur-xl"
-    >
-
-        <div class="flex flex-col items-center py-8 gap-6 font-label-caps tracking-widest uppercase text-sm">
-
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#experience"
-            >
-                Experience
-            </a>
-
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#services"
-            >
-                Services
-            </a>
-
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#gallery"
-            >
-                Gallery
-            </a>
-
-            <a
-                class="text-on-surface-variant hover:text-primary transition-all duration-300"
-                href="#testimonials"
-            >
-                Testimonials
-            </a>
-
-            <!-- Mobile Button -->
-            <a
-                class="bg-primary-container text-on-primary-container px-6 py-3 font-bold hover:scale-105 active:scale-95 transition-all duration-300"
-                href="#booking"
-            >
+            <!-- Desktop Button -->
+            <a class="hidden md:inline-flex bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps tracking-widest font-bold hover:scale-105 active:scale-95 transition-all duration-300"
+                href="#booking">
                 Book Consultation
             </a>
 
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-primary flex items-center justify-center"
+                aria-label="Open Menu">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+
+                </svg>
+
+            </button>
+
         </div>
 
-    </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-20 left-0 w-full bg-surface-container-lowest border-t border-outline-variant/20 backdrop-blur-xl">
 
-</nav>
+            <div class="flex flex-col items-center py-8 gap-6 font-label-caps tracking-widest uppercase text-sm">
 
-<!-- Mobile Menu Script -->
-<script>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#experience">
+                    Experience
+                </a>
 
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#services">
+                    Services
+                </a>
 
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#gallery">
+                    Gallery
+                </a>
 
-</script>
+                <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#testimonials">
+                    Testimonials
+                </a>
+
+                <!-- Mobile Button -->
+                <a class="bg-primary-container text-on-primary-container px-6 py-3 font-bold hover:scale-105 active:scale-95 transition-all duration-300"
+                    href="#booking">
+                    Book Consultation
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu Script -->
+    <script>
+
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    </script>
     <!-- Hero Section -->
     <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="absolute inset-0 bg-black">
@@ -381,39 +341,127 @@
     <!-- About Section -->
     <section class="py-section-padding px-gutter max-w-container-max mx-auto overflow-hidden reveal active"
         id="experience">
+
         <div class="grid lg:grid-cols-2 gap-24 items-center">
+
+            <!-- Content -->
             <div class="space-y-8">
+
                 <div class="w-20 h-1 bg-primary"></div>
-                <h2 class="font-display-lg text-headline-md leading-tight">A Heritage of <span
-                        class="text-primary italic">Excellence</span> Built Over Three Decades</h2>
+
+                <h2 class="font-display-lg text-headline-md leading-tight">
+                    A Heritage of
+                    <span class="text-primary italic">Excellence</span>
+                    Built Over Three Decades
+                </h2>
+
                 <p class="font-body-md text-body-md text-on-surface-variant">
-                    Since 1994, PEE YEM EVENTS & CATERS has been creating memorable celebrations with passion,
-                    creativity, and dedication. We specialize in event management, elegant decor, and delicious catering
-                    services crafted to delight every guest. From intimate family gatherings to grand celebrations, our
-                    journey has been built on trust, quality service, and unforgettable experiences.
+                    Since 1994, PEE YEM EVENTS & CATERS has been creating memorable
+                    celebrations with passion, creativity, and dedication.
+                    We specialize in event management, elegant decor, and delicious
+                    catering services crafted to delight every guest.
+
+                    From intimate family gatherings to grand celebrations,
+                    our journey has been built on trust, quality service,
+                    and unforgettable experiences.
+                </p>
+
+                <!-- Stats -->
                 <div class="grid grid-cols-2 gap-8 pt-4">
+
+                    <!-- Successful Events -->
                     <div class="glass-card p-6 border-l-4 border-l-primary reveal active">
-                        <h4 class="text-primary font-display-lg text-headline-sm mb-1">1000+</h4>
-                        <p class="font-label-caps text-[10px] tracking-widest uppercase opacity-60">Successful Events
+                        <h4 class="counter text-primary font-display-lg text-headline-sm mb-1" data-target="1000">
+                            0
+                        </h4>
+
+                        <p class="font-label-caps text-[10px] tracking-widest uppercase opacity-60">
+                            Successful Events
                         </p>
                     </div>
+
+                    <!-- Years -->
                     <div class="glass-card p-6 border-l-4 border-l-primary reveal active">
-                        <h4 class="text-primary font-display-lg text-headline-sm mb-1">30+</h4>
-                        <p class="font-label-caps text-[10px] tracking-widest uppercase opacity-60">Years of Excellence
+                        <h4 class="counter text-primary font-display-lg text-headline-sm mb-1" data-target="30">
+                            0
+                        </h4>
+
+                        <p class="font-label-caps text-[10px] tracking-widest uppercase opacity-60">
+                            Years of Excellence
                         </p>
                     </div>
+
                 </div>
+
             </div>
+
+            <!-- Image -->
             <div class="relative group reveal active">
+
                 <div
                     class="absolute inset-0 border-2 border-primary/20 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform">
                 </div>
-                <img alt="Planning Legacy"
-                    class="relative z-10 w-full h-[500px] object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-700"
-                    src="./images/heritage.jpg">
+
+                <img src="./images/heritage.jpg" alt="Planning Legacy"
+                    class="relative z-10 w-full h-[500px] object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-700">
+
             </div>
+
         </div>
     </section>
+
+    <!-- Counter Animation Script -->
+    <script>
+        const counters = document.querySelectorAll(".counter");
+
+        const startCounter = (counter) => {
+
+            const target = +counter.getAttribute("data-target");
+            let count = 0;
+
+            const speed = target / 120;
+
+            const updateCounter = () => {
+
+                count += speed;
+
+                if (count < target) {
+
+                    counter.innerText = Math.ceil(count) + "+";
+
+                    requestAnimationFrame(updateCounter);
+
+                } else {
+
+                    counter.innerText = target + "+";
+
+                }
+            };
+
+            updateCounter();
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    startCounter(entry.target);
+
+                    observer.unobserve(entry.target);
+
+                }
+            });
+
+        }, {
+            threshold: 0.5
+        });
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    </script>
     <!-- Services Section -->
     <section class="py-section-padding px-gutter bg-surface-container-lowest/50 reveal active" id="services">
         <div class="max-w-container-max mx-auto">
@@ -456,8 +504,8 @@
                 <!-- Stage Decoration -->
                 <div class="group relative h-[450px] overflow-hidden glass-card reveal active">
                     <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    alt="Stage Decoration"    
-                    data-alt="A magnificent wedding stage decoration featuring a lush floral arch."
+                        alt="Stage Decoration"
+                        data-alt="A magnificent wedding stage decoration featuring a lush floral arch."
                         src="./images/stage decor 1.jpg">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                     <div class="absolute bottom-0 p-8 w-full">
@@ -485,8 +533,8 @@
                 <!-- Floral Decor -->
                 <div class="group relative h-[450px] overflow-hidden glass-card reveal active">
                     <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    alt="Floral Decor"    
-                    data-alt="Detail of luxury floral centerpieces." src="./images/floral decor.jpg">
+                        alt="Floral Decor" data-alt="Detail of luxury floral centerpieces."
+                        src="./images/floral decor.jpg">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                     <div class="absolute bottom-0 p-8 w-full">
                         <h3 class="font-headline-sm text-headline-sm mb-2">Floral Decor</h3>
@@ -499,8 +547,8 @@
                 <!-- Reception & Engagement -->
                 <div class="group relative h-[450px] overflow-hidden glass-card reveal active">
                     <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    alt="Reception & Engagement"    
-                    data-alt="A lavish evening reception setting." src="./images/food4.jpg">
+                        alt="Reception & Engagement" data-alt="A lavish evening reception setting."
+                        src="./images/food4.jpg">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                     <div class="absolute bottom-0 p-8 w-full">
                         <h3 class="font-headline-sm text-headline-sm mb-2">Food Counters</h3>
@@ -580,104 +628,81 @@
         </div>
     </section>
     <!-- Gallery Section -->
-<section class="py-section-padding px-gutter bg-surface-container-low/30 reveal active" id="gallery">
+    <section class="py-section-padding px-gutter bg-surface-container-low/30 reveal active" id="gallery">
 
-    <div class="max-w-container-max mx-auto">
+        <div class="max-w-container-max mx-auto">
 
-        <!-- Heading -->
-        <h2 class="font-display-lg text-headline-md md:text-display-lg text-center mb-16 reveal active">
-            Captured <span class="italic text-primary">Celebrations</span>
-        </h2>
+            <!-- Heading -->
+            <h2 class="font-display-lg text-headline-md md:text-display-lg text-center mb-16 reveal active">
+                Captured <span class="italic text-primary">Celebrations</span>
+            </h2>
 
-        <!-- Gallery Grid -->
-        <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+            <!-- Gallery Grid -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
 
-            <!-- Image 1 -->
-            <div class="relative group overflow-hidden glass-card reveal active">
-                <img
-                    src="./images/gallery4.jpg"
-                    alt="Wedding stage decoration"
-                    class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                >
+                <!-- Image 1 -->
+                <div class="relative group overflow-hidden glass-card reveal active">
+                    <img src="./images/gallery4.jpg" alt="Wedding stage decoration"
+                        class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105">
+                </div>
+
+                <!-- Image 2 -->
+                <div class="relative group overflow-hidden glass-card reveal active">
+                    <img src="./images/gallery1.jpg" alt="Elegant stage decor"
+                        class="w-full h-[350px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105">
+                </div>
+
+                <!-- Image 3 -->
+                <div class="relative group overflow-hidden glass-card reveal active">
+                    <img src="./images/gallery2.jpg" alt="Catering food setup"
+                        class="w-full h-[450px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105">
+                </div>
+
+                <!-- Image 4 -->
+                <div class="relative group overflow-hidden glass-card reveal active">
+                    <img src="./images/gallery.jpg" alt="Event coordination moment"
+                        class="w-full h-[400px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105">
+                </div>
+
+                <!-- Image 5 -->
+                <div class="relative group overflow-hidden glass-card reveal active">
+                    <img src="./images/stage decor.jpg" alt="Reception celebration"
+                        class="w-full h-[550px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105">
+                </div>
+
+                <!-- Image 6 -->
+                <div class="relative group overflow-hidden glass-card reveal active">
+                    <img src="./images/gallery 6.jpg" alt="Decorated food counter"
+                        class="w-full h-[350px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105">
+                </div>
+
             </div>
 
-            <!-- Image 2 -->
-            <div class="relative group overflow-hidden glass-card reveal active">
-                <img
-                    src="./images/gallery1.jpg"
-                    alt="Elegant stage decor"
-                    class="w-full h-[350px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                >
-            </div>
+            <!-- Instagram CTA -->
+            <div class="flex justify-center mt-16 reveal active">
 
-            <!-- Image 3 -->
-            <div class="relative group overflow-hidden glass-card reveal active">
-                <img
-                    src="./images/gallery2.jpg"
-                    alt="Catering food setup"
-                    class="w-full h-[450px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                >
-            </div>
+                <a href="https://www.instagram.com/peeyem.events/" target="_blank" rel="noopener noreferrer"
+                    class="group inline-flex items-center justify-center gap-2 border border-primary/30 px-5 sm:px-8 py-4 text-primary hover:bg-primary hover:text-black transition-all duration-500 uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[11px] sm:text-sm font-medium whitespace-nowrap">
 
-            <!-- Image 4 -->
-            <div class="relative group overflow-hidden glass-card reveal active">
-                <img
-                    src="./images/gallery.jpg"
-                    alt="Event coordination moment"
-                    class="w-full h-[400px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                >
-            </div>
+                    <!-- Instagram Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                        fill="currentColor" viewBox="0 0 24 24">
 
-            <!-- Image 5 -->
-            <div class="relative group overflow-hidden glass-card reveal active">
-                <img
-                    src="./images/stage decor.jpg"
-                    alt="Reception celebration"
-                    class="w-full h-[550px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                >
-            </div>
+                        <path
+                            d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                    </svg>
 
-            <!-- Image 6 -->
-            <div class="relative group overflow-hidden glass-card reveal active">
-                <img
-                    src="./images/gallery 6.jpg"
-                    alt="Decorated food counter"
-                    class="w-full h-[350px] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                >
+                    <span class="leading-none whitespace-nowrap">
+                        View More on Instagram
+                    </span>
+
+                </a>
+
             </div>
 
         </div>
 
-        <!-- Instagram CTA -->
-<div class="flex justify-center mt-16 reveal active">
-
-    <a
-        href="https://www.instagram.com/peeyem.events/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="group inline-flex items-center justify-center gap-2 border border-primary/30 px-5 sm:px-8 py-4 text-primary hover:bg-primary hover:text-black transition-all duration-500 uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[11px] sm:text-sm font-medium whitespace-nowrap"
-    >
-
-        <!-- Instagram Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg"
-            class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-            fill="currentColor"
-            viewBox="0 0 24 24">
-
-            <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
-        </svg>
-
-        <span class="leading-none whitespace-nowrap">
-            View More on Instagram
-        </span>
-
-    </a>
-
-</div>
-
-    </div>
-
-</section>
+    </section>
     <!-- Testimonials Section -->
     <section class="py-section-padding px-gutter overflow-hidden relative reveal active" id="testimonials">
         <div class="absolute right-0 top-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
@@ -922,9 +947,8 @@
                         Event Type
                     </label>
 
-                    <select id="eventType"
-                    aria-label="Event Type"    
-                    class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface">
+                    <select id="eventType" aria-label="Event Type"
+                        class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface">
                         <option value="" class="bg-surface text-on-surface">
                             Select Event
                         </option>
@@ -956,30 +980,21 @@
                     </p>
 
                 </div>
-<!-- Event Date -->
-<div class="space-y-2">
+                <!-- Event Date -->
+                <div class="space-y-2">
 
-    <label
-        for="eventDate"
-        class="font-label-caps text-[10px] tracking-widest opacity-60 uppercase"
-    >
-        Event Date
-    </label>
+                    <label for="eventDate" class="font-label-caps text-[10px] tracking-widest opacity-60 uppercase">
+                        Event Date
+                    </label>
 
-    <input
-        id="eventDate"
-        name="eventDate"
-        type="date"
-        aria-label="Event Date"
-        min=""
-        class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface"
-    >
+                    <input id="eventDate" name="eventDate" type="date" aria-label="Event Date" min=""
+                        class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface">
 
-    <p id="dateError" class="text-red-500 text-sm hidden">
-        Please select a valid future date
-    </p>
+                    <p id="dateError" class="text-red-500 text-sm hidden">
+                        Please select a valid future date
+                    </p>
 
-</div>
+                </div>
 
                 <!-- Message -->
                 <div class="md:col-span-2 space-y-2">
@@ -1019,102 +1034,102 @@
         Booking request submitted successfully!
     </div>
 
-   <!-- Validation Script -->
-<script>
+    <!-- Validation Script -->
+    <script>
 
-    const form = document.getElementById("bookingForm");
-    const toast = document.getElementById("toast");
+        const form = document.getElementById("bookingForm");
+        const toast = document.getElementById("toast");
 
-    // Inputs
-    const name = document.getElementById("name");
-    const phone = document.getElementById("phone");
-    const eventType = document.getElementById("eventType");
-    const eventDate = document.getElementById("eventDate");
-    const message = document.getElementById("message");
+        // Inputs
+        const name = document.getElementById("name");
+        const phone = document.getElementById("phone");
+        const eventType = document.getElementById("eventType");
+        const eventDate = document.getElementById("eventDate");
+        const message = document.getElementById("message");
 
-    // Errors
-    const nameError = document.getElementById("nameError");
-    const phoneError = document.getElementById("phoneError");
-    const eventError = document.getElementById("eventError");
-    const dateError = document.getElementById("dateError");
-    const messageError = document.getElementById("messageError");
+        // Errors
+        const nameError = document.getElementById("nameError");
+        const phoneError = document.getElementById("phoneError");
+        const eventError = document.getElementById("eventError");
+        const dateError = document.getElementById("dateError");
+        const messageError = document.getElementById("messageError");
 
-    // Set minimum date to today
-    const today = new Date().toISOString().split("T")[0];
-    eventDate.setAttribute("min", today);
+        // Set minimum date to today
+        const today = new Date().toISOString().split("T")[0];
+        eventDate.setAttribute("min", today);
 
-    // Submit
-    form.addEventListener("submit", function (e) {
+        // Submit
+        form.addEventListener("submit", function (e) {
 
-        e.preventDefault();
+            e.preventDefault();
 
-        // Reset Errors
-        document.querySelectorAll(".text-red-500").forEach((el) => {
-            el.classList.add("hidden");
+            // Reset Errors
+            document.querySelectorAll(".text-red-500").forEach((el) => {
+                el.classList.add("hidden");
+            });
+
+            let isValid = true;
+
+            // Name Validation
+            if (name.value.trim() === "") {
+                nameError.classList.remove("hidden");
+                isValid = false;
+            }
+
+            // Phone Validation
+            const phonePattern = /^[0-9]{10}$/;
+
+            if (!phonePattern.test(phone.value.trim())) {
+                phoneError.classList.remove("hidden");
+                isValid = false;
+            }
+
+            // Event Type Validation
+            if (eventType.value === "") {
+                eventError.classList.remove("hidden");
+                isValid = false;
+            }
+
+            // Date Validation
+            if (eventDate.value === "") {
+
+                dateError.textContent = "Please select an event date";
+                dateError.classList.remove("hidden");
+                isValid = false;
+
+            } else if (eventDate.value < today) {
+
+                dateError.textContent = "Please select a future date";
+                dateError.classList.remove("hidden");
+                isValid = false;
+            }
+
+            // Message Validation
+            if (message.value.trim() === "") {
+                messageError.classList.remove("hidden");
+                isValid = false;
+            }
+
+            // Success
+            if (isValid) {
+
+                // Show Toast
+                toast.classList.remove("opacity-0", "pointer-events-none");
+                toast.classList.add("opacity-100");
+
+                // Hide Toast
+                setTimeout(() => {
+                    toast.classList.remove("opacity-100");
+                    toast.classList.add("opacity-0", "pointer-events-none");
+                }, 3000);
+
+                // Reset Form
+                form.reset();
+            }
+
         });
 
-        let isValid = true;
-
-        // Name Validation
-        if (name.value.trim() === "") {
-            nameError.classList.remove("hidden");
-            isValid = false;
-        }
-
-        // Phone Validation
-        const phonePattern = /^[0-9]{10}$/;
-
-        if (!phonePattern.test(phone.value.trim())) {
-            phoneError.classList.remove("hidden");
-            isValid = false;
-        }
-
-        // Event Type Validation
-        if (eventType.value === "") {
-            eventError.classList.remove("hidden");
-            isValid = false;
-        }
-
-        // Date Validation
-        if (eventDate.value === "") {
-
-            dateError.textContent = "Please select an event date";
-            dateError.classList.remove("hidden");
-            isValid = false;
-
-        } else if (eventDate.value < today) {
-
-            dateError.textContent = "Please select a future date";
-            dateError.classList.remove("hidden");
-            isValid = false;
-        }
-
-        // Message Validation
-        if (message.value.trim() === "") {
-            messageError.classList.remove("hidden");
-            isValid = false;
-        }
-
-        // Success
-        if (isValid) {
-
-            // Show Toast
-            toast.classList.remove("opacity-0", "pointer-events-none");
-            toast.classList.add("opacity-100");
-
-            // Hide Toast
-            setTimeout(() => {
-                toast.classList.remove("opacity-100");
-                toast.classList.add("opacity-0", "pointer-events-none");
-            }, 3000);
-
-            // Reset Form
-            form.reset();
-        }
-
-    });
-
-</script>
+    </script>
 
     <!-- Footer -->
     <footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-section-padding pb-12 px-gutter">
@@ -1136,66 +1151,50 @@
                     </p>
 
                     <!-- Social -->
-<div class="flex gap-4">
+                    <div class="flex gap-4">
 
-    <!-- Facebook -->
-    <a
-        class="w-10 h-10 flex items-center justify-center border border-primary/20 text-primary hover:bg-primary hover:text-black transition-all"
-        href="https://facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Facebook"
-    >
+                        <!-- Facebook -->
+                        <a class="w-10 h-10 flex items-center justify-center border border-primary/20 text-primary hover:bg-primary hover:text-black transition-all"
+                            href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
 
-        <svg xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
+                                viewBox="0 0 24 24">
 
-            <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/>
-        </svg>
+                                <path
+                                    d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z" />
+                            </svg>
 
-    </a>
+                        </a>
 
-    <!-- Instagram -->
-    <a
-        class="w-10 h-10 flex items-center justify-center border border-primary/20 text-primary hover:bg-primary hover:text-black transition-all"
-        href="https://www.instagram.com/peeyem.events/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-    >
+                        <!-- Instagram -->
+                        <a class="w-10 h-10 flex items-center justify-center border border-primary/20 text-primary hover:bg-primary hover:text-black transition-all"
+                            href="https://www.instagram.com/peeyem.events/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
 
-        <svg xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
+                                viewBox="0 0 24 24">
 
-            <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
-        </svg>
+                                <path
+                                    d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                            </svg>
 
-    </a>
+                        </a>
 
-    <!-- WhatsApp -->
-    <a
-        class="w-10 h-10 flex items-center justify-center border border-primary/20 text-primary hover:bg-primary hover:text-black transition-all"
-        href="https://wa.me/919995034429"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-    >
+                        <!-- WhatsApp -->
+                        <a class="w-10 h-10 flex items-center justify-center border border-primary/20 text-primary hover:bg-primary hover:text-black transition-all"
+                            href="https://wa.me/919995034429" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">
 
-        <svg xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
+                                viewBox="0 0 24 24">
 
-            <path d="M20.52 3.48A11.78 11.78 0 0 0 12.06 0C5.55 0 .24 5.31.24 11.82c0 2.08.54 4.11 1.57 5.91L0 24l6.46-1.69a11.78 11.78 0 0 0 5.6 1.43h.01c6.51 0 11.82-5.31 11.82-11.82 0-3.16-1.23-6.13-3.37-8.44zM12.07 21.5h-.01a9.64 9.64 0 0 1-4.91-1.35l-.35-.2-3.84 1 1.03-3.74-.23-.38a9.62 9.62 0 0 1-1.48-5.01c0-5.33 4.35-9.68 9.69-9.68 2.58 0 5 .99 6.82 2.8a9.58 9.58 0 0 1 2.84 6.83c0 5.34-4.35 9.69-9.68 9.69zm5.3-7.25c-.29-.15-1.72-.85-1.98-.95-.27-.1-.46-.15-.66.15-.19.29-.76.95-.92 1.14-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.37-.02-.51-.07-.15-.66-1.59-.91-2.18-.24-.58-.48-.49-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.84 1.19 3.04.15.19 2.06 3.15 5 4.42.7.3 1.25.48 1.68.61.71.22 1.36.19 1.88.12.57-.08 1.72-.7 1.96-1.37.24-.68.24-1.26.17-1.37-.07-.12-.26-.19-.56-.34z"/>
-        </svg>
+                                <path
+                                    d="M20.52 3.48A11.78 11.78 0 0 0 12.06 0C5.55 0 .24 5.31.24 11.82c0 2.08.54 4.11 1.57 5.91L0 24l6.46-1.69a11.78 11.78 0 0 0 5.6 1.43h.01c6.51 0 11.82-5.31 11.82-11.82 0-3.16-1.23-6.13-3.37-8.44zM12.07 21.5h-.01a9.64 9.64 0 0 1-4.91-1.35l-.35-.2-3.84 1 1.03-3.74-.23-.38a9.62 9.62 0 0 1-1.48-5.01c0-5.33 4.35-9.68 9.69-9.68 2.58 0 5 .99 6.82 2.8a9.58 9.58 0 0 1 2.84 6.83c0 5.34-4.35 9.69-9.68 9.69zm5.3-7.25c-.29-.15-1.72-.85-1.98-.95-.27-.1-.46-.15-.66.15-.19.29-.76.95-.92 1.14-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.37-.02-.51-.07-.15-.66-1.59-.91-2.18-.24-.58-.48-.49-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.84 1.19 3.04.15.19 2.06 3.15 5 4.42.7.3 1.25.48 1.68.61.71.22 1.36.19 1.88.12.57-.08 1.72-.7 1.96-1.37.24-.68.24-1.26.17-1.37-.07-.12-.26-.19-.56-.34z" />
+                            </svg>
 
-    </a>
+                        </a>
 
-</div>
+                    </div>
 
                 </div>
 
